@@ -1,0 +1,25 @@
+description: Two demes. One with variable population size. No migration or pulse
+time_units: generations
+metadata: {sampled_demes: ['A', 'B'], sample_sizes: [10, 6]}
+defaults:
+  epoch:
+    start_size: 50
+demes:
+  - name: X
+    epochs:
+      - end_time: 10
+  - name: A
+    ancestors: [X]
+    epochs:
+      - start_size: 25
+  - name: B
+    ancestors: [X]
+    epochs:
+      - start_size: 20
+        end_time: 5
+      - start_size: 40
+        end_size: 100
+
+pulses:
+- {sources: [A], dest: B, proportions: [1e-2], time: 2}
+- {sources: [B], dest: A, proportions: [1e-1], time: 8}

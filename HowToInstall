@@ -8,3 +8,4 @@
 8. Interactive apps -> Jupyter notebook
 9. ! pip install -r requirements.txt
 10. ! pip install --upgrade "jax[cpu]"
+11. ! pip install git+https://bitbucket.org/simongravel/moments.git

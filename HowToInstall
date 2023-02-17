@@ -1,6 +1,6 @@
 1. Go to https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard
 2. Clusters -> GL Shell Access
-3. Go to here if you need Duo two-factor auth https://arc.umich.edu/greatlakes/user-guide/
+3. Go to here if you need the Duo two-factor auth https://arc.umich.edu/greatlakes/user-guide/
 4. Make sure you see [<your umich id>@gl-login2 ~]$
 5. Follow the steps in here: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux
 6. git clone --branch jt2 git@github.com:enesdilber/momi3.git

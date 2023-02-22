@@ -1,11 +1,16 @@
 1. Go to https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard
-2. Clusters -> GL Shell Access
-3. Go to here if you need the Duo two-factor auth https://arc.umich.edu/greatlakes/user-guide/
-4. Make sure you see [<your umich id>@gl-login2 ~]$
-5. Follow the steps in here: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux
-6. git clone --branch jt2 git@github.com:enesdilber/momi3.git
-7. Go to https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard
-8. Interactive apps -> Jupyter notebook
-9. ! pip install -r requirements.txt
-10. ! pip install --upgrade "jax[cpu]"
-11. ! pip install git+https://bitbucket.org/simongravel/moments.git
+2. Interactive apps -> Basic Desktop
+3. Make sure slurm account is stats_dept1
+4. Once you open the desktop click on terminal
+5. module load python/3.10.4
+6. Create a virtual enviroment
+7. python -m venv URPS
+8. Activate it: source activate URPS/bin/activate
+9. Locate momi3, you should have cloned that before. If not run git clone --branch jt2 git@github.com:enesdilber/momi3.git
+10. cd momi3
+11. pip install -r requirements.txt
+12. pip install git+https://bitbucket.org/simongravel/moments.git
+13. pip install --upgrade "jax[cpu]"
+14. pip install jaxopt
+15. pip install typing-extensions
+16. python momi3/MOMI.py

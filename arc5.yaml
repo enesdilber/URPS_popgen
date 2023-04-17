@@ -1,0 +1,48 @@
+description: 5 pop with archaic migration
+time_units: generations
+metadata: {
+  sampled_demes: ['Papuan', 'Sardinian', 'YRI', 'Vindija', 'Denisovan'],
+  sample_sizes: [30, 50, 50, 2, 2]
+}
+doi:
+- https://www.nature.com/articles/s41467-021-26503-5
+demes:
+- name: YRI
+  epochs:
+  - end_time: 10344
+    start_size: 3600
+  - end_time: 0
+    start_size: 20000
+- name: Sardinian
+  start_time: 2500
+  ancestors:
+  - YRI
+  epochs:
+  - end_time: 0
+    start_size: 2500
+    end_size: 15000
+- name: Papuan
+  start_time: 1700
+  ancestors:
+  - Sardinian
+  epochs:
+  - end_time: 0
+    start_size: 1300
+    end_size: 6500
+- name: Vindija
+  start_time: 22000
+  ancestors:
+  - YRI
+  epochs:
+  - end_time: 2250
+    start_size: 5000
+- name: Denisovan
+  start_time: 14000
+  ancestors:
+  - Vindija
+  epochs:
+  - end_time: 1000
+    start_size: 2000
+pulses:
+- {sources: [Vindija], dest: Sardinian, proportions: [0.02], time: 2250} 
+- {sources: [Denisovan], dest: Papuan, proportions: [0.02], time: 1000} 
